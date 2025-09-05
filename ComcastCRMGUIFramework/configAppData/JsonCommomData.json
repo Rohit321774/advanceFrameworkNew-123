@@ -1,0 +1,7 @@
+{
+    "Browser" : "Chrome" 
+     "Url" :   "http://49.249.28.218:8888/index.php?action=DetailView&module=Contacts&parenttab=Marketing&record=61634&activity_mode=&viewname=0&start="
+     "Username" : "admin"
+    "Password" : "admin"
+    "timeOut" : 20
+}
