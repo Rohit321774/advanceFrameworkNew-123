@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtility {
 	public String getDataFromExcel(String sheetname,int rowNum,int celNum) throws   IOException {
-		FileInputStream fls=new FileInputStream("C:\\Users\\rohit\\eclipse-workspace\\ComcastCRMGUIFramework\\testdata\\Book420.xlsx");
+		FileInputStream fls=new FileInputStream("C:\\Users\\rohit\\git\\repository3\\ComcastCRMGUIFramework\\testdata\\Book420.xlsx");
 		 Workbook wb=WorkbookFactory.create(fls);
 		        String Data =wb.getSheet(sheetname).getRow(rowNum).getCell(celNum).getStringCellValue();
 		        wb.close();
@@ -20,7 +20,7 @@ public class ExcelUtility {
 	}
 	
 	public int getLastRowNum(String sheetName) throws EncryptedDocumentException, IOException {
-		FileInputStream fls=new FileInputStream("C:\\Users\\rohit\\eclipse-workspace\\ComcastCRMGUIFramework\\testdata\\Book420.xlsx");
+		FileInputStream fls=new FileInputStream("C:\\Users\\rohit\\git\\repository3\\ComcastCRMGUIFramework\\testdata\\Book420.xlsx");
 		 Workbook wb=WorkbookFactory.create(fls);
 		    int Data=wb.getSheet(sheetName).getLastRowNum();
 		    wb.close();

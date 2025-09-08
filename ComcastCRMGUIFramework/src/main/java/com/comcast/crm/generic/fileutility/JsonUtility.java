@@ -11,7 +11,7 @@ import org.json.simple.parser.ParseException;
 public class JsonUtility {
 	
 	public String getDataFromJsonFile(String Key) throws IOException, ParseException {
-		FileReader fileR=new FileReader("C:\\Users\\rohit\\eclipse-workspace\\ComcastCRMGUIFramework\\src\\main\\java\\com\\comcast\\crm\\generic\\fileutility\\JsonUtility.java");
+		FileReader fileR=new FileReader("C:\\Users\\rohit\\git\\repository3\\ComcastCRMGUIFramework\\configAppData\\JsonCommomData.json");
             JSONParser parser=new JSONParser();
                 Object ob=parser.parse(fileR);
 	

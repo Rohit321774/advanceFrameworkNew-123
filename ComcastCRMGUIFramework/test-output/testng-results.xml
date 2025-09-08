@@ -1,85 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-06T00:01:27 IST" name="Default suite" finished-at="2025-09-06T00:01:37 IST" duration-ms="10137">
+  <suite started-at="2025-09-08T15:15:28 IST" name="Default suite" finished-at="2025-09-08T15:16:01 IST" duration-ms="32614">
     <groups>
+      <group name="regressionTest">
+        <method signature="CreateNewOrganistionTest.CreateNewOrgWithPhoneNumberTest()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" name="CreateNewOrgWithPhoneNumberTest" class="com.comcast.crm.orgtest.CreateNewOrganistionTest"/>
+        <method signature="CreateNewOrganistionTest.CreateOrgWithIndustrytypeTest()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" name="CreateOrgWithIndustrytypeTest" class="com.comcast.crm.orgtest.CreateNewOrganistionTest"/>
+      </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="CreateNewOrganistionTest.CreateNewOrgTest()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" name="CreateNewOrgTest" class="com.comcast.crm.orgtest.CreateNewOrganistionTest"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2025-09-06T00:01:27 IST" name="Default test" finished-at="2025-09-06T00:01:37 IST" duration-ms="10137">
-      <class name="com.comcast.crm.orgtest.InvoiceTest">
-        <test-method is-config="true" signature="ConfigBS()[pri:0, instance:com.comcast.crm.orgtest.InvoiceTest@8519cb4]" started-at="2025-09-06T00:01:26 IST" name="ConfigBS" finished-at="2025-09-06T00:01:27 IST" duration-ms="578" status="PASS">
+    <test started-at="2025-09-08T15:15:28 IST" name="Default test" finished-at="2025-09-08T15:16:01 IST" duration-ms="32614">
+      <class name="com.comcast.crm.orgtest.CreateNewOrganistionTest">
+        <test-method is-config="true" signature="ConfigBS()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:28 IST" name="ConfigBS" finished-at="2025-09-08T15:15:28 IST" duration-ms="639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigBS -->
-        <test-method is-config="true" signature="ConfigBC()[pri:0, instance:com.comcast.crm.orgtest.InvoiceTest@8519cb4]" started-at="2025-09-06T00:01:27 IST" name="ConfigBC" finished-at="2025-09-06T00:01:29 IST" duration-ms="2154" status="PASS">
+        <test-method is-config="true" signature="ConfigBC()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:28 IST" name="ConfigBC" finished-at="2025-09-08T15:15:33 IST" duration-ms="4314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigBC -->
-        <test-method is-config="true" signature="ConfigBM()[pri:0, instance:com.comcast.crm.orgtest.InvoiceTest@8519cb4]" started-at="2025-09-06T00:01:29 IST" name="ConfigBM" finished-at="2025-09-06T00:01:35 IST" duration-ms="6290" status="PASS">
+        <test-method is-config="true" signature="ConfigBM()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:33 IST" name="ConfigBM" finished-at="2025-09-08T15:15:37 IST" duration-ms="4406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigBM -->
-        <test-method signature="createInvoiceTest()[pri:0, instance:com.comcast.crm.orgtest.InvoiceTest@8519cb4]" started-at="2025-09-06T00:01:35 IST" name="createInvoiceTest" finished-at="2025-09-06T00:01:35 IST" duration-ms="91" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [login] but found [Admin123@ Administrator1 - Contacts - vtiger CRM 5 - Commercial Open Source CRM]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [login] but found [Admin123@ Administrator1 - Contacts - vtiger CRM 5 - Commercial Open Source CRM]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.comcast.crm.orgtest.InvoiceTest.createInvoiceTest(InvoiceTest.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="CreateNewOrgTest()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:37 IST" name="CreateNewOrgTest" finished-at="2025-09-08T15:15:44 IST" duration-ms="6398" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createInvoiceTest -->
-        <test-method is-config="true" signature="ConfigAM()[pri:0, instance:com.comcast.crm.orgtest.InvoiceTest@8519cb4]" started-at="2025-09-06T00:01:36 IST" name="ConfigAM" finished-at="2025-09-06T00:01:37 IST" duration-ms="905" status="PASS">
+        </test-method> <!-- CreateNewOrgTest -->
+        <test-method is-config="true" signature="ConfigAM()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:44 IST" name="ConfigAM" finished-at="2025-09-08T15:15:44 IST" duration-ms="903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAM -->
-        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:com.comcast.crm.orgtest.InvoiceTest@8519cb4]" started-at="2025-09-06T00:01:37 IST" name="ConfigAC" finished-at="2025-09-06T00:01:37 IST" duration-ms="438" status="PASS">
+        <test-method is-config="true" signature="ConfigBM()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:45 IST" name="ConfigBM" finished-at="2025-09-08T15:15:47 IST" duration-ms="2229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method signature="CreateNewOrgWithPhoneNumberTest()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:47 IST" name="CreateNewOrgWithPhoneNumberTest" finished-at="2025-09-08T15:15:51 IST" duration-ms="4561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewOrgWithPhoneNumberTest -->
+        <test-method is-config="true" signature="ConfigAM()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:51 IST" name="ConfigAM" finished-at="2025-09-08T15:15:52 IST" duration-ms="933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigAM -->
+        <test-method is-config="true" signature="ConfigBM()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:52 IST" name="ConfigBM" finished-at="2025-09-08T15:15:53 IST" duration-ms="893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method signature="CreateOrgWithIndustrytypeTest()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:53 IST" name="CreateOrgWithIndustrytypeTest" finished-at="2025-09-08T15:15:59 IST" duration-ms="6309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrgWithIndustrytypeTest -->
+        <test-method is-config="true" signature="ConfigAM()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:15:59 IST" name="ConfigAM" finished-at="2025-09-08T15:16:00 IST" duration-ms="1055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigAM -->
+        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:16:00 IST" name="ConfigAC" finished-at="2025-09-08T15:16:01 IST" duration-ms="519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAC -->
-        <test-method is-config="true" signature="ConfigAS()[pri:0, instance:com.comcast.crm.orgtest.InvoiceTest@8519cb4]" started-at="2025-09-06T00:01:37 IST" name="ConfigAS" finished-at="2025-09-06T00:01:37 IST" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="ConfigAS()[pri:0, instance:com.comcast.crm.orgtest.CreateNewOrganistionTest@15043a2f]" started-at="2025-09-08T15:16:01 IST" name="ConfigAS" finished-at="2025-09-08T15:16:01 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAS -->
-      </class> <!-- com.comcast.crm.orgtest.InvoiceTest -->
+      </class> <!-- com.comcast.crm.orgtest.CreateNewOrganistionTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
