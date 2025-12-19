@@ -1,25 +1,14 @@
 package com.comcast.crm.orgtest;
 
 import java.io.IOException;
-import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import com.comcast.crm.basetest.BaseClass;
-import com.comcast.crm.generic.fileutility.ExcelUtility;
-import com.comcast.crm.generic.fileutility.FileUtility;
 import com.comcast.crm.generic.objectrepositoryutility.CreateNewOrganistionInfoPage;
 import com.comcast.crm.generic.objectrepositoryutility.CreateNewOrganistionPage;
 import com.comcast.crm.generic.objectrepositoryutility.HomePage;
-import com.comcast.crm.generic.objectrepositoryutility.LoginPage;
 import com.comcast.crm.generic.objectrepositoryutility.OrganisationPage;
-import com.comcast.crm.generic.webdriverutility.JavaUtility;
-import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 
 public class DeleteOrg extends BaseClass {
 	@Test

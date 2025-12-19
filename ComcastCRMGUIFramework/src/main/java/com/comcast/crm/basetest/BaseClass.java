@@ -45,7 +45,9 @@ public class BaseClass {
 
 		System.out.println("Launch Browser");
 		String Browser = file.getDataFromPropertiesFile("Browser");
-		if (Browser.equals("Chrome")) {
+//for maven run time parameter
+	//	String Browser=System.getProperty("Browser");
+		if (Browser.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
 		} else if (Browser.equals("edge")) {
 			driver = new EdgeDriver();
@@ -65,10 +67,17 @@ public class BaseClass {
 		String Url = file.getDataFromPropertiesFile("Url");
 		String User = file.getDataFromPropertiesFile("Username");
 		String Pass = file.getDataFromPropertiesFile("Password");
-
+		LoginPage login=new LoginPage(driver);
+		login.loginToApp(Url,User, Pass);
+		
+//for maven run time parameter
+/*		
+		String Url=System.getProperty("url");
+		String User=System.getProperty("Username");
+		String Pass=System.getProperty("Password");
 		LoginPage login = new LoginPage(driver);
-		login.loginToApp(Url, User, Pass);
-
+        login.loginToApp(Url,User, Pass);
+*/
 }
 
 	@AfterMethod(groups={"smokeTest","regressionTest"})
